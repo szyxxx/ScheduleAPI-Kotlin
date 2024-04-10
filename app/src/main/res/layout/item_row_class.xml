@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_img"
+        android:layout_width="450dp"
+        android:layout_height="150dp"
+        app:cardBackgroundColor="@color/brown"
+        app:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/item_matakuliah_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="@color/peach"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/item_kodedosen_class"
+                    android:layout_width="203dp"
+                    android:layout_height="match_parent"
+                    android:text=" - ABO"
+                    android:textColor="@color/peach"
+                    android:textSize="25sp"
+                    android:textStyle="bold"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/red"
+                    android:textSize="25sp"
+                    app:cardCornerRadius="5dp">
+
+                    <TextView
+                        android:id="@+id/item_statuskehadiran_class"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Hadir"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/brown">
+                    </TextView>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/item_tempat_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tempat"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/peach"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:id="@+id/item_statuskelas_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="| Onsite"
+                    android:textSize="18sp"
+                    android:textColor="@color/peach"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/item_waktu_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Waktu"
+                android:textSize="18sp"
+                android:textColor="@color/peach"
+                android:gravity="end"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
